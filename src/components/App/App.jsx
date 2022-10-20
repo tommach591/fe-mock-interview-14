@@ -7,17 +7,15 @@ function App() {
 
   let getTrendingCoins = () => {
     const cards = [];
-    for (let i = 0; i < data[0].coins.length; i++) {
-      cards.push(<Card key={i} item={data[0].coins[i].item} />);
+    for (let i = 0; i < data.coins.length; i++) {
+      cards.push(<Card key={i} item={data.coins[i].item} />);
     }
 
     return cards;
   };
 
   return (
-    <div className="App">
-      {data[0] ? getTrendingCoins() : <div>Loading</div>}
-    </div>
+    <div className="App">{data ? getTrendingCoins() : <div>Loading</div>}</div>
   );
 }
 

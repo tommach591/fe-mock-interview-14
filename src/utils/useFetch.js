@@ -9,5 +9,5 @@ export function useFetch(url) {
       .then((retrieved) => setData(retrieved));
   }, [url]);
 
-  return [data];
+  return data;
 }

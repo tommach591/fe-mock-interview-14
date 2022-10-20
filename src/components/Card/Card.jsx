@@ -24,13 +24,15 @@ function Card({ item }) {
         <div className="CardInfo">
           <div>{`${item.coin_id} - ${item.name}`}</div>
           <div>{`${item.symbol} - ${item.market_cap_rank}`}</div>
-          <div>{price[0] ? `$${Object.values(price[0])[0].usd}` : "$0.00"}</div>
+          <div>
+            {price ? `$${Object.values(price)[0].usd.toFixed(2)}` : "$0.00"}
+          </div>
         </div>
       </div>
       <div>
         {expand ? (
           info ? (
-            <div className="CoinInfo">{info[0].description.en}</div>
+            <div className="CoinInfo">{info.description.en}</div>
           ) : (
             "Loading..."
           )
