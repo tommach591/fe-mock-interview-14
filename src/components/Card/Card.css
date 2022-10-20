@@ -6,6 +6,10 @@
   font-family: cursive;
 }
 
+.Card:hover {
+  cursor: pointer;
+}
+
 .CardContent {
   display: flex;
   align-items: center;
