@@ -1,8 +1,9 @@
 .Card {
   border: 1px solid black;
   width: 20rem;
-  min-height: 6rem;
+  min-height: 5rem;
   margin: 2rem;
+  font-family: cursive;
 }
 
 .CardContent {
@@ -23,7 +24,7 @@
 }
 
 .CardInfo > div {
-  margin: 5px;
+  margin: 4px;
 }
 
 .CoinInfo {
