@@ -1,0 +1,36 @@
+.Card {
+  border: 1px solid black;
+  width: 20rem;
+  min-height: 6rem;
+  margin: 2rem;
+}
+
+.CardContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Image {
+  border: 1px solid black;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.CardInfo {
+  width: 15rem;
+  text-align: center;
+}
+
+.CardInfo > div {
+  margin: 5px;
+}
+
+.CoinInfo {
+  border: 1px solid black;
+  background-color: white;
+  max-height: 10rem;
+  overflow-y: auto;
+  margin: -1px;
+  padding: 1rem;
+}
